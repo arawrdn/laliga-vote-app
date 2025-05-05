@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Vote La Liga Match</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>Vote La Liga Match: Barcelona vs Real Madrid</h1>
+    <div class="teams">
+      <div class="team" id="barcelona">
+        <img src="barcelona.png" alt="Barcelona" />
+        <button onclick="vote('barcelona')">Vote Barcelona</button>
+      </div>
+      <div class="team" id="realmadrid">
+        <img src="realmadrid.png" alt="Real Madrid" />
+        <button onclick="vote('realmadrid')">Vote Real Madrid</button>
+      </div>
+    </div>
+    <div id="result" class="result">
+      <p>Vote count:</p>
+      <p id="barcelonaVotes">Barcelona: 0</p>
+      <p id="realmadridVotes">Real Madrid: 0</p>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
